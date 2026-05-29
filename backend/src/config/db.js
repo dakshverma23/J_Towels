@@ -7,10 +7,13 @@ export const connectDb = async () => {
     process.exit(1);
   }
   try {
-    await mongoose.connect(uri);
+    await mongoose.connect(uri, {
+      serverSelectionTimeoutMS: 15000,
+    });
     console.log("MongoDB connected");
   } catch (err) {
     console.error("MongoDB connection failed:", err.message);
+    console.error("Check: 1) MONGO_URI is correct  2) Atlas IP whitelist includes 0.0.0.0/0");
     process.exit(1);
   }
 };
