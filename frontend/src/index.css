@@ -158,11 +158,13 @@ body::selection {
   }
 
   .ven-heading-xl {
-    @apply font-display text-[2.45rem] font-semibold leading-[0.9] tracking-normal text-ven-ink md:text-[4.6rem] lg:text-[6.4rem];
+    @apply font-display text-[2rem] font-semibold leading-[0.92] tracking-normal text-ven-ink;
+    font-size: clamp(2rem, 5vw + 1rem, 6.4rem);
   }
 
   .ven-heading-lg {
-    @apply font-display text-[2.15rem] font-semibold leading-[0.98] tracking-normal text-ven-ink md:text-[3.7rem] lg:text-[4.7rem];
+    @apply font-display text-[1.75rem] font-semibold leading-[0.98] tracking-normal text-ven-ink;
+    font-size: clamp(1.75rem, 4vw + 0.8rem, 4.7rem);
   }
 
   .ven-body {
@@ -170,12 +172,12 @@ body::selection {
   }
 
   .ven-btn {
-    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[8px] border border-ven-ink bg-ven-ink px-6 py-3 font-sans text-xs font-bold uppercase text-ven-cream shadow-[0_12px_34px_rgba(16,19,20,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#00a6a6] hover:bg-[#00a6a6] hover:text-white;
+    @apply inline-flex min-h-11 md:min-h-12 items-center justify-center gap-2 rounded-[8px] border border-ven-ink bg-ven-ink px-5 md:px-6 py-2.5 md:py-3 font-sans text-[11px] md:text-xs font-bold uppercase text-ven-cream shadow-[0_12px_34px_rgba(16,19,20,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#00a6a6] hover:bg-[#00a6a6] hover:text-white;
     letter-spacing: 0.16em;
   }
 
   .ven-btn-outline {
-    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[8px] border border-ven-line bg-white/70 px-6 py-3 font-sans text-xs font-bold uppercase text-ven-ink shadow-[0_12px_34px_rgba(16,19,20,0.08)] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-[#ff6f61] hover:bg-[#ff6f61] hover:text-white;
+    @apply inline-flex min-h-11 md:min-h-12 items-center justify-center gap-2 rounded-[8px] border border-ven-line bg-white/70 px-5 md:px-6 py-2.5 md:py-3 font-sans text-[11px] md:text-xs font-bold uppercase text-ven-ink shadow-[0_12px_34px_rgba(16,19,20,0.08)] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-[#ff6f61] hover:bg-[#ff6f61] hover:text-white;
     letter-spacing: 0.16em;
   }
 
@@ -280,7 +282,7 @@ body::selection {
 
 .hero-copy {
   padding-top: 0;
-  transform: translateY(clamp(-5.75rem, -7vh, -3rem));
+  transform: translateY(clamp(-2rem, -4vh, -5.75rem));
 }
 
 .hero-copy .ven-heading-xl {
@@ -291,7 +293,7 @@ body::selection {
   border: 1px solid rgba(255, 255, 255, 0.78);
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(219, 234, 254, 0.52));
   border-radius: 12px;
-  padding: 1rem;
+  padding: 0.75rem;
   box-shadow: 0 18px 50px rgba(37, 99, 235, 0.12);
   backdrop-filter: blur(18px);
 }
@@ -299,7 +301,7 @@ body::selection {
 .hero-mini-stat span {
   display: block;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 700;
   line-height: 0.9;
   color: #0b2f6f;
@@ -316,8 +318,8 @@ body::selection {
 }
 
 .hero-visual {
-  top: clamp(4.5rem, 11vh, 8rem);
-  margin-top: clamp(4.5rem, 11vh, 8rem);
+  top: clamp(1rem, 4vh, 8rem);
+  margin-top: clamp(1rem, 4vh, 8rem);
   perspective: 1100px;
 }
 
@@ -407,7 +409,7 @@ body::selection {
   display: block;
   margin-top: 0.2rem;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
   line-height: 0.95;
   color: #071833;
 }
@@ -742,12 +744,20 @@ body::selection {
     display: none;
   }
 
+  .hero-copy {
+    text-shadow: 0 2px 20px rgba(7, 24, 51, 0.5), 0 4px 40px rgba(7, 24, 51, 0.3);
+  }
+
+  .hero-copy .ven-heading-xl {
+    text-shadow: 0 2px 16px rgba(7, 24, 51, 0.6), 0 6px 40px rgba(7, 24, 51, 0.4);
+  }
+
   .hero-mini-stat {
-    padding: 0.85rem;
+    padding: 0.65rem;
   }
 
   .hero-mini-stat span {
-    font-size: 1.65rem;
+    font-size: 1.4rem;
   }
 
   .quality-console {
@@ -755,15 +765,48 @@ body::selection {
   }
 
   .quality-video-card {
-    min-height: 27rem;
+    min-height: 22rem;
   }
 
   .quality-node {
-    min-height: 16rem;
+    min-height: 14rem;
   }
 
   .quality-node-media {
     transform: translateY(-54%);
+  }
+
+  .ven-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-image-shell {
+    animation: none;
+  }
+
+  .product-flow-card {
+    width: min(85vw, 300px);
+    min-height: 380px;
+  }
+
+  .hero-visual {
+    max-width: 320px;
+    top: -1rem;
+    margin-top: -1rem;
+  }
+
+  .hero-stat-card {
+    padding: 0.75rem;
+  }
+
+  .hero-stat-card strong {
+    font-size: 1.3rem;
+  }
+
+  .hero-stat-card p,
+  .hero-mini-stat p {
+    font-size: 0.6rem;
   }
 }
 

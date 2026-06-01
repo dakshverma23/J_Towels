@@ -172,16 +172,16 @@ export default function HomePage() {
       <section ref={heroRef} className="luxury-hero relative overflow-hidden pt-28 md:pt-32">
         <div className="hero-aurora" />
         <div className="hero-gridline" />
-        <Scene3D variant="home" className="z-[2] left-[-34vw] right-auto top-0 h-[56vh] w-[150vw] opacity-100 md:left-[14vw] md:-top-10 md:h-[88vh] md:w-[72vw] xl:left-[17vw] xl:-top-16 xl:w-[66vw]" />
+        <Scene3D variant="home" className="z-[2] left-1/2 -translate-x-1/2 top-[8vh] h-[60vh] w-[100vw] opacity-90 md:left-[14vw] md:translate-x-0 md:-top-10 md:h-[88vh] md:w-[72vw] md:opacity-100 xl:left-[17vw] xl:-top-16 xl:w-[66vw]" />
         <div className="ven-container relative z-10 grid min-h-[calc(100vh-8rem)] items-start gap-8 pb-12 pt-12 lg:grid-cols-[1.08fr_0.92fr] lg:pt-16">
           <div className="hero-copy relative z-10 pb-6">
-            <div className="hero-fade mb-6 inline-flex items-center gap-3 rounded-full border border-white/70 bg-white/70 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-[#1d4ed8] shadow-[0_18px_60px_rgba(37,99,235,0.12)] backdrop-blur-xl">
-              <span className="grid h-6 w-6 place-items-center rounded-full bg-[#2563eb] text-white">
-                <Sparkles size={13} />
+            <div className="hero-fade mb-4 md:mb-6 inline-flex items-center gap-2 md:gap-3 rounded-full border border-white/70 bg-white/80 md:bg-white/70 px-3 md:px-4 py-1.5 md:py-2 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.18em] text-[#1d4ed8] shadow-[0_18px_60px_rgba(37,99,235,0.12)] backdrop-blur-xl">
+              <span className="grid h-5 w-5 md:h-6 md:w-6 place-items-center rounded-full bg-[#2563eb] text-white">
+                <Sparkles size={11} />
               </span>
               Global textile export network
             </div>
-            <h1 className="ven-heading-xl max-w-5xl">
+            <h1 className="ven-heading-xl max-w-5xl text-white md:text-ven-ink">
               <span className="block overflow-hidden">
                 <span className="hero-line inline-block">CONNECTED</span>
               </span>
@@ -189,17 +189,17 @@ export default function HomePage() {
                 <span className="hero-line inline-block">TEXTILES FOR</span>
               </span>
               <span className="block overflow-hidden">
-                <span className="hero-line inline-block italic text-[#2563eb]">GLOBAL</span>
+                <span className="hero-line inline-block italic text-[#60a5fa] md:text-[#2563eb]">GLOBAL</span>
               </span>
               <span className="block overflow-hidden">
                 <span className="hero-line inline-block">BUYERS</span>
               </span>
             </h1>
-            <p className="hero-fade mt-7 max-w-2xl text-lg leading-relaxed text-ven-muted">
+            <p className="hero-fade mt-5 md:mt-7 max-w-2xl text-sm md:text-lg leading-relaxed text-white/90 md:text-ven-muted">
               Jasmine Towels connects export-grade manufacturing in Tamil Nadu with buyers across
               the world, making bulk orders, custom colors, and reliable sourcing feel clear from the first touchpoint.
             </p>
-            <div className="hero-fade mt-9 flex flex-wrap gap-3">
+            <div className="hero-fade mt-6 md:mt-9 flex flex-wrap gap-3">
               <Link to="/products" className="ven-btn">
                 Explore Products <ArrowRight size={16} />
               </Link>
@@ -207,7 +207,7 @@ export default function HomePage() {
                 View Quality
               </Link>
             </div>
-            <div className="hero-fade mt-10 grid max-w-2xl gap-3 sm:grid-cols-3">
+            <div className="hero-fade mt-6 md:mt-10 grid max-w-2xl gap-2 md:gap-3 grid-cols-3">
               {[
                 ["07", "Export hubs"],
                 ["2", "Factory floors"],
@@ -322,15 +322,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="product-theatre border-t border-[#1d4ed8]/20 py-20 text-white md:py-28">
+      <section className="product-theatre border-t border-[#1d4ed8]/20 py-14 md:py-20 text-white md:py-28">
         <div className="ven-container relative z-10">
-          <div className="ven-reveal mb-4 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="ven-reveal mb-4 flex flex-col gap-4 md:gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
             <SplitHeading
               lines={["LIVE PRODUCT", "LINES IN MOTION"]}
               className="ven-heading-lg max-w-4xl !text-white"
             />
-              <p className="mt-6 max-w-xl text-sm font-semibold uppercase tracking-[0.14em] text-blue-100/60">
+              <p className="mt-4 md:mt-6 max-w-xl text-xs md:text-sm font-semibold uppercase tracking-[0.14em] text-blue-100/60">
                 Products are pulled directly from the database and managed by admin.
           </p>
             </div>
@@ -408,26 +408,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="factory-showcase relative overflow-hidden border-t border-ven-line py-20 md:py-28">
+      <section className="factory-showcase relative overflow-hidden border-t border-ven-line py-14 md:py-20 lg:py-28">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(37,99,235,0.08)_1px,transparent_1px),linear-gradient(180deg,rgba(14,165,233,0.08)_1px,transparent_1px)] bg-[size:56px_56px]" />
         <div className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#38bdf8]/24 blur-3xl" />
-        <div className="ven-container relative grid items-center gap-12 lg:grid-cols-[0.92fr_1.08fr]">
+        <div className="ven-container relative grid items-center gap-8 md:gap-12 lg:grid-cols-[0.92fr_1.08fr]">
           <div className="ven-reveal">
-            <p className="ven-eyebrow mb-6 text-[#2563eb]">Production intelligence</p>
+            <p className="ven-eyebrow mb-4 md:mb-6 text-[#2563eb]">Production intelligence</p>
             <SplitHeading lines={["FROM FACTORY", "FLOOR TO GLOBAL", "DOCKS."]} className="ven-heading-lg max-w-3xl" />
-            <p className="ven-body mt-7">
+            <p className="ven-body mt-5 md:mt-7">
               Every order moves through a visible chain of quality checkpoints: yarn preparation, weaving, wet processing,
               finishing, packing, and export dispatch. Buyers get clarity before production starts and confidence before goods ship.
             </p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            <div className="mt-8 grid gap-3 grid-cols-3">
               {[
                 ["2", "Factories"],
                 ["4", "Core stages"],
                 ["24/7", "Order visibility"]
               ].map(([value, label]) => (
-                <div key={label} className="rounded-[8px] border border-white/70 bg-white/70 p-4 shadow-[0_18px_50px_rgba(37,99,235,0.12)] backdrop-blur transition-transform duration-300 hover:-translate-y-1">
-                  <p className="font-display text-3xl font-semibold text-[#0b2f6f]">{value}</p>
-                  <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-ven-muted">{label}</p>
+                <div key={label} className="rounded-[8px] border border-white/70 bg-white/70 p-3 md:p-4 shadow-[0_18px_50px_rgba(37,99,235,0.12)] backdrop-blur transition-transform duration-300 hover:-translate-y-1">
+                  <p className="font-display text-xl md:text-3xl font-semibold text-[#0b2f6f]">{value}</p>
+                  <p className="mt-1 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.14em] text-ven-muted">{label}</p>
                 </div>
               ))}
             </div>
@@ -436,27 +436,27 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="ven-reveal grid auto-rows-[180px] grid-cols-2 gap-4 md:auto-rows-[210px] lg:grid-cols-6">
+          <div className="ven-reveal grid auto-rows-[140px] grid-cols-2 gap-3 md:auto-rows-[210px] md:gap-4 lg:grid-cols-6">
             {productionShowcase.map((item, index) => (
               <Link
                 key={item.label}
                 to="/facilities"
                 className={`showcase-card group relative overflow-hidden rounded-[8px] border border-white/70 bg-white/40 shadow-[0_24px_70px_rgba(37,99,235,0.16)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_34px_90px_rgba(37,99,235,0.24)] ${
-                  index === 0 ? "col-span-2 row-span-2 lg:col-span-4" : "col-span-2 lg:col-span-2"
+                  index === 0 ? "col-span-2 row-span-2 lg:col-span-4" : "col-span-1 md:col-span-1 lg:col-span-2"
                 }`}
               >
                 <img src={item.img} alt={item.title} className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071833]/88 via-[#071833]/18 to-transparent" />
-                <div className="absolute left-5 right-5 top-5 flex items-center justify-between">
-                  <span className="rounded-full border border-white/30 bg-white/18 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur">
+                <div className="absolute left-3 right-3 top-3 md:left-5 md:right-5 md:top-5 flex items-center justify-between">
+                  <span className="rounded-full border border-white/30 bg-white/18 px-2 md:px-3 py-0.5 md:py-1 text-[9px] md:text-[10px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur">
                     {item.label}
                   </span>
-                  <span className="grid h-9 w-9 place-items-center rounded-full bg-white/18 text-white backdrop-blur transition-transform duration-300 group-hover:rotate-45">
-                    <ArrowRight size={16} />
+                  <span className="grid h-7 w-7 md:h-9 md:w-9 place-items-center rounded-full bg-white/18 text-white backdrop-blur transition-transform duration-300 group-hover:rotate-45">
+                    <ArrowRight size={14} />
                   </span>
                 </div>
-                <div className="absolute bottom-5 left-5 right-5">
-                  <p className="font-display text-2xl font-semibold leading-tight text-white md:text-3xl">{item.title}</p>
+                <div className="absolute bottom-3 left-3 right-3 md:bottom-5 md:left-5 md:right-5">
+                  <p className="font-display text-lg md:text-2xl lg:text-3xl font-semibold leading-tight text-white">{item.title}</p>
                 </div>
               </Link>
             ))}
@@ -464,7 +464,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="testimonial-cloud border-t border-ven-line py-20 md:py-28 overflow-hidden">
+      <section className="testimonial-cloud border-t border-ven-line py-14 md:py-20 lg:py-28 overflow-hidden">
         <div className="ven-container">
           <div className="ven-reveal text-center">
             <SplitHeading lines={["TRUSTED BY", "GLOBAL BUYERS"]} className="ven-heading-lg mx-auto" />
@@ -487,20 +487,20 @@ export default function HomePage() {
 
         {/* Social proof bar */}
         <div className="ven-container">
-          <div className="ven-reveal mt-12 flex flex-wrap items-center justify-center gap-8 rounded-2xl border border-white/70 bg-white/60 px-8 py-6 shadow-[0_12px_40px_rgba(37,99,235,0.06)] backdrop-blur-xl md:gap-12">
+          <div className="ven-reveal mt-12 flex flex-wrap items-center justify-center gap-4 md:gap-8 rounded-2xl border border-white/70 bg-white/60 px-4 md:px-8 py-5 md:py-6 shadow-[0_12px_40px_rgba(37,99,235,0.06)] backdrop-blur-xl md:gap-12">
             <div className="text-center">
-              <p className="font-display text-3xl font-bold text-[#0b2f6f]">150+</p>
-              <p className="mt-1 text-xs font-bold uppercase tracking-[0.12em] text-ven-muted">Global buyers</p>
+              <p className="font-display text-2xl md:text-3xl font-bold text-[#0b2f6f]">150+</p>
+              <p className="mt-1 text-[10px] md:text-xs font-bold uppercase tracking-[0.12em] text-ven-muted">Global buyers</p>
             </div>
-            <div className="h-10 w-px bg-ven-line" />
+            <div className="h-8 md:h-10 w-px bg-ven-line" />
             <div className="text-center">
-              <p className="font-display text-3xl font-bold text-[#0b2f6f]">98%</p>
-              <p className="mt-1 text-xs font-bold uppercase tracking-[0.12em] text-ven-muted">Reorder rate</p>
+              <p className="font-display text-2xl md:text-3xl font-bold text-[#0b2f6f]">98%</p>
+              <p className="mt-1 text-[10px] md:text-xs font-bold uppercase tracking-[0.12em] text-ven-muted">Reorder rate</p>
             </div>
-            <div className="h-10 w-px bg-ven-line" />
+            <div className="h-8 md:h-10 w-px bg-ven-line" />
             <div className="text-center">
-              <p className="font-display text-3xl font-bold text-[#0b2f6f]">12+</p>
-              <p className="mt-1 text-xs font-bold uppercase tracking-[0.12em] text-ven-muted">Countries served</p>
+              <p className="font-display text-2xl md:text-3xl font-bold text-[#0b2f6f]">12+</p>
+              <p className="mt-1 text-[10px] md:text-xs font-bold uppercase tracking-[0.12em] text-ven-muted">Countries served</p>
             </div>
             <div className="h-10 w-px bg-ven-line hidden md:block" />
             <div className="text-center hidden md:block">
@@ -515,11 +515,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="blue-glass-section border-t border-ven-line py-20 md:py-28">
-        <div className="ven-container relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+      <section className="blue-glass-section border-t border-ven-line py-14 md:py-20 lg:py-28">
+        <div className="ven-container relative grid gap-6 md:gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div className="ven-reveal">
             <SplitHeading lines={["READY TO", "BUILD AN ORDER?"]} className="ven-heading-lg" />
-            <p className="ven-body mt-6">
+            <p className="ven-body mt-4 md:mt-6">
               Plan a bulk order, export partnership, or product customization with the same storefront and backend flow already in place.
             </p>
           </div>
