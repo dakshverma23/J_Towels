@@ -69,18 +69,18 @@ export default function PageTemplate({ content }) {
       </section>
 
       {contactInfo && (
-        <section className="border-t border-ven-line bg-[#101314] py-16 text-white md:py-24">
+        <section className="border-t border-ven-line bg-[#071833] py-16 text-white md:py-24">
           <div className="ven-container grid gap-4 md:grid-cols-3">
             <div className="ven-reveal rounded-[8px] border border-white/10 bg-white/[0.06] p-6">
-              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#00d1c7]">Email</p>
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#93c5fd]">Email</p>
               <p className="text-lg">{contactInfo.email}</p>
             </div>
             <div className="ven-reveal rounded-[8px] border border-white/10 bg-white/[0.06] p-6">
-              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#b7e85f]">Phone</p>
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#bfdbfe]">Phone</p>
               <p className="text-lg">{contactInfo.phone}</p>
             </div>
             <div className="ven-reveal rounded-[8px] border border-white/10 bg-white/[0.06] p-6">
-              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#ff6f61]">Address</p>
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#60a5fa]">Address</p>
               <p className="text-lg">{contactInfo.address}</p>
             </div>
           </div>

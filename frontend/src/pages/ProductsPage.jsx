@@ -77,7 +77,7 @@ export default function ProductsPage() {
 
               return (
                 <article key={product._id} className="ven-reveal group neo-panel flex min-h-full flex-col overflow-hidden">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-ven-sand">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-[#dbeafe] via-[#eff8ff] to-[#bfdbfe]">
                     {product.media?.[0] ? (
                       <img
                         src={product.media[0].url}
@@ -92,7 +92,7 @@ export default function ProductsPage() {
                     <div className="absolute left-4 top-4 rounded-full border border-white/70 bg-white/82 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-ven-ink backdrop-blur">
                       {product.category}
                     </div>
-                    <div className="absolute bottom-4 right-4 rounded-[8px] bg-[#101314] px-4 py-2 text-white shadow-lg">
+                    <div className="absolute bottom-4 right-4 rounded-[8px] bg-[#071833] px-4 py-2 text-white shadow-lg">
                       <span className="block text-[10px] font-bold uppercase tracking-[0.14em] text-white/50">Unit</span>
                       <span className="font-display text-2xl font-semibold">${product.price?.toFixed(2)}</span>
                     </div>
@@ -131,7 +131,7 @@ export default function ProductsPage() {
                     </div>
 
                     <Button
-                      className="mt-6 !h-12 !rounded-[8px] !border-ven-ink !bg-ven-ink !font-sans !text-xs !font-bold !uppercase !tracking-[0.14em] !text-ven-cream hover:!border-[#00a6a6] hover:!bg-[#00a6a6] hover:!text-white"
+                      className="mt-6 !h-12 !rounded-[8px] !border-ven-ink !bg-ven-ink !font-sans !text-xs !font-bold !uppercase !tracking-[0.14em] !text-ven-cream hover:!border-[#2563eb] hover:!bg-[#2563eb] hover:!text-white"
                       icon={<ShoppingBag size={16} />}
                       onClick={() => {
                         addToCart(product, choice.quantity, choice.color);

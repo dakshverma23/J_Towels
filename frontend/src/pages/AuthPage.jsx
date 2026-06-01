@@ -21,7 +21,7 @@ export default function AuthPage() {
 
       <section className="ven-container grid gap-6 pb-24 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
         <div className="ven-reveal neo-panel-dark p-7 md:p-9">
-          <div className="grid h-12 w-12 place-items-center rounded-[8px] bg-[#00d1c7] text-[#101314]">
+          <div className="grid h-12 w-12 place-items-center rounded-[8px] bg-[#93c5fd] text-[#071833]">
             <KeyRound size={22} />
           </div>
           <h2 className="mt-8 font-display text-4xl font-semibold">One account, same backend.</h2>

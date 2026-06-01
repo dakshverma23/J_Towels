@@ -37,7 +37,7 @@ export default function CartPage() {
               {items.map((item, idx) => (
                 <li key={`${item.product._id}-${idx}`} className="ven-reveal neo-panel flex flex-col gap-5 p-5 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="h-20 w-20 overflow-hidden rounded-[8px] bg-ven-sand">
+                    <div className="h-20 w-20 overflow-hidden rounded-[8px] bg-gradient-to-br from-[#dbeafe] via-[#eff8ff] to-[#bfdbfe]">
                       {item.product.media?.[0] ? (
                         <img src={item.product.media[0].url} alt={item.product.name} className="h-full w-full object-cover" />
                       ) : (
@@ -55,7 +55,7 @@ export default function CartPage() {
                   <Button
                     onClick={() => removeItem(idx)}
                     icon={<Trash2 size={16} />}
-                    className="!h-11 !rounded-[8px] !border-[#ff6f61] !bg-transparent !font-bold !text-[#c4473b] hover:!bg-[#ff6f61] hover:!text-white"
+                    className="!h-11 !rounded-[8px] !border-[#2563eb] !bg-transparent !font-bold !text-[#1d4ed8] hover:!bg-[#2563eb] hover:!text-white"
                   >
                     Remove
                   </Button>

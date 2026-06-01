@@ -9,12 +9,12 @@ export default {
       },
       colors: {
         ven: {
-          cream: "#f5f7f2",
-          sand: "#e7ece5",
-          ink: "#101314",
-          muted: "#63706d",
-          accent: "#00a6a6",
-          line: "rgba(16, 19, 20, 0.12)"
+          cream: "#eef7ff",
+          sand: "#dbeafe",
+          ink: "#071833",
+          muted: "#4b6386",
+          accent: "#2563eb",
+          line: "rgba(37, 99, 235, 0.16)"
         }
       },
       letterSpacing: {

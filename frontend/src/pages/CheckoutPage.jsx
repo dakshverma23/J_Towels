@@ -85,7 +85,7 @@ export default function CheckoutPage() {
         </Form>
 
         <aside className="ven-reveal neo-panel-dark h-fit p-6 md:p-8">
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#00d1c7]">Order packet</p>
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#93c5fd]">Order packet</p>
           <p className="mt-3 font-display text-5xl font-semibold">{items.length}</p>
           <p className="mt-2 text-sm text-white/56">Line items waiting for checkout.</p>
           <div className="mt-6 space-y-3">

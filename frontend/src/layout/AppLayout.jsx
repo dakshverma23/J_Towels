@@ -34,7 +34,7 @@ export default function AppLayout({ children }) {
   };
 
   return (
-    <div className="min-h-screen bg-ven-cream text-ven-ink">
+    <div className="app-surface min-h-screen text-ven-ink">
       <header
         className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
           scrolled ? "py-3" : "py-5"
@@ -43,7 +43,7 @@ export default function AppLayout({ children }) {
         <div className="ven-container">
           <div className="neo-panel flex items-center justify-between px-4 py-3 md:px-5">
             <Link to="/" className="group flex items-center gap-3 text-ven-ink">
-              <span className="grid h-10 w-10 place-items-center rounded-[8px] bg-ven-ink text-ven-cream shadow-[0_12px_28px_rgba(16,19,20,0.24)]">
+              <span className="grid h-10 w-10 place-items-center rounded-[8px] bg-ven-ink text-ven-cream shadow-[0_12px_28px_rgba(37,99,235,0.22)]">
                 <Sparkles size={18} strokeWidth={1.8} />
               </span>
               <span>
@@ -167,7 +167,7 @@ export default function AppLayout({ children }) {
 
       <main>{children}</main>
 
-      <footer className="border-t border-ven-line bg-[#101314] text-ven-cream">
+      <footer className="border-t border-ven-line bg-[#071833] text-ven-cream">
         <div className="ven-container grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <p className="font-display text-3xl font-semibold">Jasmine Towels Pvt. Ltd.</p>
@@ -184,7 +184,7 @@ export default function AppLayout({ children }) {
             </div>
           </div>
           <div>
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-[#00d1c7]">Navigate</p>
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-[#93c5fd]">Navigate</p>
             <div className="flex flex-col gap-3">
               {links.map(([label, path]) => (
                 <Link key={path} to={path} className="text-sm text-white/62 transition-colors hover:text-white">
@@ -194,7 +194,7 @@ export default function AppLayout({ children }) {
             </div>
           </div>
           <div>
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-[#b7e85f]">Facilities</p>
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-[#bfdbfe]">Facilities</p>
             <p className="text-sm text-white/62">Madurai / Sivagangai</p>
             <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-white/42">
               Copyright {new Date().getFullYear()} Jasmine Towels

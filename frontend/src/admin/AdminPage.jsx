@@ -51,10 +51,10 @@ export default function AdminPage() {
             breakpoint="lg"
             theme="light"
             width={250}
-            className="relative z-10 !bg-[#101314] !text-white"
+            className="relative z-10 !bg-[#071833] !text-white"
           >
             <div className="border-b border-white/10 p-5">
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#00d1c7]">Jasmine OS</p>
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#93c5fd]">Jasmine OS</p>
               <h2 className={`mt-2 font-display font-semibold text-white transition-all ${collapsed ? "text-xl" : "text-3xl"}`}>
                 {collapsed ? "JT" : "Admin"}
               </h2>
